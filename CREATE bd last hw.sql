@@ -6,10 +6,10 @@ INSERT INTO artists (artist_name)
 	VALUES('Eminem'), ('Rihanna'), ('Imagine dragons'), ('The Weeknd');
 
 INSERT INTO genres_artists (genres_id, artists_id) 	
-	VALUES(1,2), (1,3),
-		(2,2), (2,3),
-		(3,1), (3,3),
-		(4,1), (4,3);
+	VALUES(2,1), (3,1),
+		(1,2), (3,2),
+		(1,3), (3,3),
+		(1,4), (3,4);
 
 INSERT INTO albums (album_name, album_release_date) 
 	VALUES('Music to Be Murdered By', 2020), ('Kamikaze', 2018), ('Revival', 2017),
