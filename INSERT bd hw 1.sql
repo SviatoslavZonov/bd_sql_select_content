@@ -4,7 +4,7 @@ SELECT g.genre_name, count(ga.artists_id) FROM genres g
    GROUP BY g.genre_name;
 
  -- Количество треков, вошедших в альбомы 2019–2020 годов. 
-SELECT al.album_name, al.album_date , count(t.id) FROM albums al
+SELECT al.album_name, al.album_release_date , count(t.id) FROM albums al
    JOIN tracks t ON al.id = t.album_id
    WHERE al.album_release_date BETWEEN 2019 and 2020
    GROUP BY al.album_name, al.album_release_date;
