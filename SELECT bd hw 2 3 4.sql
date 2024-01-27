@@ -9,7 +9,7 @@ SELECT track_name FROM tracks
 
 -- Названия сборников, вышедших в период с 2018 по 2020 год включительно.
 SELECT collection_name FROM collections 
-	WHERE collection_date BETWEEN 2018 and 2020;
+	WHERE collection_release_date BETWEEN 2018 and 2020;
 
 -- Исполнители, чьё имя состоит из одного слова.
 SELECT artist_name FROM artists
