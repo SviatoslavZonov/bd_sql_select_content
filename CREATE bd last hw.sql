@@ -1,11 +1,9 @@
 INSERT INTO genres (genre_name)
 	VALUES ('Rock'), ('Hip hop'), ('Pop music');
 
+-- В последующих запросах порядок Артистов остается таким же.
 INSERT INTO artists (artist_name)
-	VALUES('Eminem'),
-        ('Rihanna'),
-		('Imagine dragons'),
-        ('The Weeknd');
+	VALUES('Eminem'), ('Rihanna'), ('Imagine dragons'), ('The Weeknd');
 
 INSERT INTO genres_artists (genres_id, artists_id) 	
 	VALUES(1,2), (1,3),
